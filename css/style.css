@@ -270,6 +270,111 @@ textarea:focus-visible{
   display: block;
 }
 
+/* =======================================
+   FLOATING STREET / Y2K BACKGROUND
+=======================================*/
+
+.bg-floating{
+    position:fixed;
+    inset:0;
+    overflow:hidden;
+    pointer-events:none;
+    z-index:-1;
+}
+
+.bg-floating span{
+    position:absolute;
+    font-size:2rem;
+    opacity:.08;
+    filter:drop-shadow(0 0 8px rgba(255,255,255,.3));
+    animation:floatItems linear infinite;
+}
+
+.bg-floating span:nth-child(1){
+    left:6%;
+    top:10%;
+    animation-duration:18s;
+}
+
+.bg-floating span:nth-child(2){
+    left:18%;
+    top:70%;
+    animation-duration:15s;
+    font-size:2.6rem;
+}
+
+.bg-floating span:nth-child(3){
+    left:32%;
+    top:25%;
+    animation-duration:20s;
+}
+
+.bg-floating span:nth-child(4){
+    left:47%;
+    top:80%;
+    animation-duration:16s;
+}
+
+.bg-floating span:nth-child(5){
+    left:58%;
+    top:15%;
+    animation-duration:17s;
+}
+
+.bg-floating span:nth-child(6){
+    left:70%;
+    top:65%;
+    animation-duration:22s;
+}
+
+.bg-floating span:nth-child(7){
+    left:82%;
+    top:35%;
+    animation-duration:14s;
+}
+
+.bg-floating span:nth-child(8){
+    left:90%;
+    top:80%;
+    animation-duration:18s;
+}
+
+.bg-floating span:nth-child(9){
+    left:10%;
+    top:45%;
+    animation-duration:19s;
+}
+
+.bg-floating span:nth-child(10){
+    left:42%;
+    top:55%;
+    animation-duration:23s;
+}
+
+.bg-floating span:nth-child(11){
+    left:77%;
+    top:8%;
+    animation-duration:17s;
+}
+
+.bg-floating span:nth-child(12){
+    left:92%;
+    top:42%;
+    animation-duration:20s;
+}
+
+@keyframes floatItems{
+    0%{
+        transform:translateY(0) rotate(0deg);
+    }
+    50%{
+        transform:translateY(-35px) rotate(180deg) scale(1.2);
+    }
+    100%{
+        transform:translateY(0) rotate(360deg);
+    }
+}
+
 /* ==========================================================================
    HERO
    ========================================================================== */
